@@ -14,6 +14,11 @@ textarea{
     color: white;
     
 }
+.btn-my-primary:hover{
+    background-color: #F3F5FC;
+    color: 609ED4;
+    border: 1px solid #609ED4;
+}
 
 .rounded-mg{
     border-radius:1em!important
@@ -23,6 +28,12 @@ textarea{
     color: #0A3871;
     border: 1px solid #0A3871;
     box-sizing: border-box;
+}
+.btn-my-secondary:hover{
+    background-color: #F3F5FC;
+    color: 609ED4;
+    border: 1px solid #609ED4;
+
 }
 /* Typography*/
 .tx-em{
