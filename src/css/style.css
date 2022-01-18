@@ -1,0 +1,35 @@
+body{
+    font-family: 'Inter', sans-serif;
+    background: #E5E5E5;
+    font-weight: 400;
+}
+textarea{
+    background: #E5E5E5;
+    border: none;
+}
+
+/* Botton*/
+.btn-my-primary{
+    background-color: #0A3871;
+    color: white;
+    
+}
+
+.rounded-mg{
+    border-radius:1em!important
+}
+.btn-my-secondary{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    box-sizing: border-box;
+}
+/* Typography*/
+.tx-em{
+    font-size: .7rem;
+    display: block;
+    padding: .7rem;
+    
+}
+
+
