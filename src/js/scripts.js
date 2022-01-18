@@ -5,4 +5,4 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 
 //recuperando os valores
 
-var txCripto = document.querySelectorAll("#");
+var txCripto = document.querySelector("#tx-criptografia");
