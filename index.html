@@ -19,9 +19,9 @@
                 <h1 class="fs-3">Código Secreto</h1>
         </nav>  
         <!-- Conteudo   -->
-        <div class="row justify-content-md-center">
-            <div class="col-7">                
-                <textarea name="criptografia" id="tx-criptografia" cols="50" rows="10" placeholder="Digite seu texto aqui."></textarea>
+        <div class="row">
+            <div class="col col-sm-7 mb-3">                
+                <textarea name="criptografia" id="tx-criptografia" cols="40" rows="10" placeholder="Digite seu texto aqui."></textarea>
                 <em class="tx-em">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -33,32 +33,46 @@
                 </div>
             </div>
             <!-- Resultado  -->
-            <div class="col-5 ">
-                <section class="rounded-mg bg-white p-5">
+            <div class="col col-sm-5">
+                <section class="rounded-mg bg-white p-5" id="noneMsg">
                     <img class="rounded mx-auto d-block w-75" src="src/img/icon-none-msg.svg" alt="" sizes="" srcset="">
                     <div class="col-md-auto">
                         <p class="text-center fw-bolder fs-6">Nenhuma mensagem encontrada</p>
                         <p class="text-center  fs-6">Digite um texto que você deseja criptografar ou descriptografar.</p>
                     </div>
-                    <div class="bd-clipboard d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button type="button" class="btn btn-outline-primary btn-clipboard btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
-                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
-                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
-                        </svg><i class="bi bi-clipboard"></i></button>
-                    </div>
+                    
+                </section>
+                
+
+                <section class="rounded-mg bg-light p-5" id="comMsg"  style="display: none;">
+                    <p>Resultado</p>
+                <div class="bd-clipboard d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="button" class="btn btn-outline-primary btn-clipboard btn-sm px-7" id="btn-copyElement" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                    </svg><i class="bi bi-clipboard"></i></button>
+                    <button type="button" class="btn btn-outline-primary btn-clipboard btn-sm" id="btn-pastElement" data-bs-toggle="tooltip" data-bs-placement="top" title="Copied">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                          </svg><i class="bi bi-check"></i></button>
+                </div>
+                
                     <div class="row justify-content-md-cente">
-                        <textarea class="bg-light" name="descriptografia" id="descriptografia" cols="30" rows="10" disabled></textarea>
+                        <textarea class="bg-light" name="descriptografia" id="tx-descriptografia" cols="40" rows="10" disabled></textarea>
                     </div>
+                
                 </section>
             </div>
+        </div>
+            
          </div>
          
          <!-- Rodapé -->
         <footer>
-            <section> 
+            <section class="container-md"> 
                 <div class="row p-4">
-                    <div class="col-7"><em class="font-monospace me-0">DuDu Silva</em>
+                    <div class="col-7"><em class="font-monospace me-0">Desenvolvido por DuDu Silva</em>
                         <span class="m-0">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dash" viewBox="0 0 30 9">
                                 <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
@@ -84,6 +98,7 @@
 
         </footer>
     </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="src/js/scripts.js"></script>
 </body>

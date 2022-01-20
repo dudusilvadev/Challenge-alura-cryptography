@@ -4,8 +4,12 @@ body{
     font-weight: 400;
 }
 textarea{
-    background: #E5E5E5;
-    border: none;
+    background: #E5E5E5 !important;
+    border: none !important;
+}
+.remove-background {
+    background-size: 0 !important;
+    transition: all 2s ease-in-out;
 }
 
 /* Botton*/
@@ -14,6 +18,8 @@ textarea{
     color: white;
     
 }
+
+
 .btn-my-primary:hover{
     background-color: #F3F5FC;
     color: 609ED4;
@@ -21,7 +27,8 @@ textarea{
 }
 
 .rounded-mg{
-    border-radius:1em!important
+    border-radius:1em!important;
+    
 }
 .btn-my-secondary{
     background-color: #D8DFE8;
